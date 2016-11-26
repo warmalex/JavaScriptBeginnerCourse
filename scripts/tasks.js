@@ -21,15 +21,15 @@ var secondLongString = 'She\'s over bored and self assured oh no I know a dirty 
 console.log(findSimilarWords(firstLongString, secondLongString)); // --> ['and'];
 
 // 4) Дан IP-адрес (строка) и маска подсети (десятичное число). Написать функцию, которая будет валидировать
-// IP-адрес (4 октета, <= 255, попадает ли в маску), а затем выводить сетевой и широковещательный адреса:
+// IP-адрес (4 октета, <= 255), а затем выводить сетевой и широковещательный адреса:
 
 var IpAddress = '10.223.98.2';
 var subnetMask = 28;
 console.log(generateBroadcastAndNetworsAddresses(IpAddress, subnetMask)); // Broadcast - 10.223.98.15, Network - 10.223.98.0
 
 // 5) Соединить все массивы в один, не допуская повторения элементов (порядок не важен):
+// P. S. 1 == '1' (строковое и числовое представление number'ов считать идентичными)
 
 var totalMessArray = [['a', 1, true], [true, 99, 'aa', undefined], ['1']];
-console.log(makeItClean(totalMessArray)); // --> ['a', 'aa', 1, undefined, true];
 
-// Решения выложить на GitHub Gist и присла на andrei-sadulin@mail.ru, vk.com/sadulin 
+console.log(makeItClean(totalMessArray)); // --> ['a', 'aa', 1, undefined, true];
